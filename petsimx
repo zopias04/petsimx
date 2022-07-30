@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("PetSimX Duper", "DarkTheme")
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Pet Dupe")
+
+
+MainSection:NewButton("Dupe your pets", "It will start duping your pets", function()
+    _G.License = "38256b752c99462f81ef"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/psx-Scripts/psxsc/main/script.lua"))()
+end)
